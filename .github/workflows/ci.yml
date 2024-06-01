@@ -18,7 +18,7 @@ jobs:
       run: echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
       
     - name: Build the Docker image
-      run: docker build -t hasanjawich/cicd-pipeline:latest .
+      run: docker build -t hasanoo/cicd-pipeline:latest .
       
     - name: Push to DockerHub
-      run: docker push hasanjawich/cicd-pipeline:latest
+      run: docker push hasanoo/cicd-pipeline:latest
