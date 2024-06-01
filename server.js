@@ -2,7 +2,6 @@
 
  const app = express()
 
- 
  app.get('/', (req, res) => {
     res.json({
         status:200,
@@ -10,6 +9,7 @@
     })
  })
 
+ 
 
  app.listen(8080, () => {
     console.log('server running on port 8080')
